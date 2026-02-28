@@ -11,10 +11,7 @@ public class EnemyAttack : MonoBehaviour
 
         if (playerHealth != null)
         {
-            // gây damage cho player
             playerHealth.TakeDamage(damage);
-
-            // enemy tự chết
             health.TakeDamage(999);
         }
     }
